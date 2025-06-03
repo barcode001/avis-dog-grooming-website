@@ -1,4 +1,8 @@
 // styles/_animations.scss or styles/main.scss
+
+@use "./layout/about";
+@use "./layout/home";
+
 .fade-up {
   opacity: 0;
   transform: translateY(20px);
@@ -23,4 +27,33 @@
   cursor: pointer;
   z-index: 1000;
   transition: opacity 0.3s ease;
+}
+
+body {
+  // background: linear-gradient(180deg, #f9c289 0%, #fc93ac 45%, #51cfd0 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: repeating-linear-gradient(
+    145deg,
+    #fcc889,
+    #fa8bab 20%,
+    #21dee1 100%
+  );
+
+  // background: linear-gradient(
+  //   #fa8bab,
+  //   #64d1d3,
+  //   #fcc889,
+  //   #fa8bab,
+  //   #64d1d3,
+  //   #fcc889
+  // );
+}
+.backdrop {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* for Safari */
+  background-color: rgba(255, 255, 255, 0.1); /* subtle tint */
+  border-radius: 1rem;
+  padding: 2rem;
 }

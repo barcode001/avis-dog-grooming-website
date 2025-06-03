@@ -1,12 +1,14 @@
 // src/App.jsx
-
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
 
 export default function App() {
   return (
-    <div>
-      <h1>Avi's Dog Grooming Website</h1>
-      <p>This is the beginning of something awesome 🐾</p>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
   );
 }
