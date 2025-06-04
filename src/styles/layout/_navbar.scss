@@ -14,6 +14,8 @@
     align-items: center;
     // padding: 0 1rem;
     padding: 0;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+      env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
 
   .logo img {
@@ -76,10 +78,21 @@
     .nav-links.open {
       display: flex;
       font-size: 1.5rem;
-      background: none;
+      // background: none;
       border: none;
       cursor: pointer;
+
       transition: transform 0.2s ease;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px); /* for Safari */
+      background: repeating-linear-gradient(
+        145deg,
+        #fcc889,
+        #fa8bab 20%,
+        #21dee1 100%
+      );
+      height: 100vh;
+      margin: 0;
     }
   }
 }
