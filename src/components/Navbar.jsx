@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar backdrop">
-      <div className="navbar-container">
+      <div className="navbar-container wrapper">
         <Link to="/" className="logo">
           <img src={logo} alt="Logo" />
         </Link>
