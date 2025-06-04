@@ -1,9 +1,5 @@
 function Home() {
-  return (
-    <div className="backdrop">
-      <h2>Home Page</h2>
-    </div>
-  );
+  return <div className="backdrop"></div>;
 }
 
 export default Home;

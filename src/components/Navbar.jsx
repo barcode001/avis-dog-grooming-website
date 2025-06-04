@@ -1,26 +1,45 @@
 import { Link } from "react-router-dom";
-import "./Navbar.scss"; // optional if you want scoped styles
+import logo from "./images/logo.PNG";
+import React, { useState } from "react";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav className="navbar">
+    <nav className="navbar backdrop">
       <div className="navbar-container">
         <Link to="/" className="logo">
-          {/* You can replace this with an image or SVG if you have a brand logo */}
-          <h1>ClientName</h1>
+          <img src={logo} alt="Logo" />
         </Link>
-        <ul className="nav-links">
+
+        {/* Hamburger icon */}
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          {menuOpen ? "✖️" : "☰"}
+        </button>
+
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={() => setMenuOpen(false)}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={() => setMenuOpen(false)}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <Link to="/services" onClick={() => setMenuOpen(false)}>
+              Services
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" onClick={() => setMenuOpen(false)}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
