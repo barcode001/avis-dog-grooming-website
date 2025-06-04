@@ -1,9 +1,6 @@
-// .hero-content {
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 1rem;
-//   margin-top: 50px;
-// }
+@use "/src/styles/abstracts/functions" as *;
+@use "/src/styles/abstracts//mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
 
 .hero {
   display: flex;
@@ -11,28 +8,29 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  // min-height: 100vh;
+
   margin-top: 50px;
   padding: 2rem;
-  // background: linear-gradient(135deg, #ffd48d, #f69fb1, #8cc8f9);
+
   color: #222;
 
   .hero-image {
-    width: 300px;
-    // border-radius: 20px;
+    width: clamp(rem(300), 40vw, rem(900));
   }
   .hero-content {
-    max-width: 800px;
+    max-width: 1100px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 1rem;
     padding: 2rem;
 
     h1 {
-      font-size: 2.5rem;
+      // font-size: 2.5rem;
+      font-size: clamp(rem(70), 30vw, rem(24));
       margin-bottom: 1rem;
       color: hsl(184deg 76% 35%);
       font-weight: 700;
+      margin: 0;
     }
 
     p {
