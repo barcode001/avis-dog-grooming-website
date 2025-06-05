@@ -14,15 +14,20 @@
 
   color: #222;
 
-  .hero-image {
-    width: clamp(rem(300), 40vw, rem(900));
-  }
   .hero-content {
     max-width: 1100px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 1rem;
     padding: 2rem;
+
+    .hero-image {
+      width: clamp(rem(300), 40vw, rem(900));
+
+      height: auto;
+      aspect-ratio: 3 / 2;
+      display: block;
+    }
 
     h1 {
       // font-size: 2.5rem;

@@ -17,6 +17,8 @@ export default function Hero() {
             src={heroDesktop}
             alt="Dogs after getting groomed"
             loading="lazy"
+            width="1200"
+            height="600"
           />
         </picture>
         <h1>Avi’s Little Groom Room</h1>
