@@ -1,6 +1,6 @@
 import React, { lazy } from "react";
 import heroDesktop from "../assets/images/hero-dogs.png";
-import heroMobile from "../assets/images/hero-dogs.webp";
+import heroMobile from "../assets/images/hero-dogs.avif";
 
 export default function Hero() {
   return (
