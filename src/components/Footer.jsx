@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import "./Footer.scss"; // optional, if you're using SCSS or want to customize styles
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
         <p className="credits">
-          © {new Date().getFullYear()} ClientName. All rights reserved.
+          © {new Date().getFullYear()} Avi's little Groom Room. All rights
+          reserved. <span className="designer">Designed by EdenCode</span>
         </p>
         <div className="footer-links">
           <Link to="/">Home</Link>
