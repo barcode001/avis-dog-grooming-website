@@ -1,0 +1,37 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+
+  .container {
+    padding: 2rem;
+
+    h1 {
+      font-size: 6rem;
+      color: hsl(184, 76%, 35%);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .back-home-btn {
+      background-color: hsl(184, 76%, 35%);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: hsl(184, 76%, 25%);
+      }
+    }
+  }
+}

@@ -13,8 +13,12 @@ export default function Footer() {
         </p>
         <div className="footer-links">
           <Link to="/">Home</Link>
-          <HashLink to="/#services">Services</HashLink>
-          <HashLink to="/#about">About</HashLink>
+          <HashLink smooth to="/#services">
+            Services
+          </HashLink>
+          <HashLink smooth to="/#about">
+            About
+          </HashLink>
           <Link to="/contact">Contact</Link>
         </div>
       </div>

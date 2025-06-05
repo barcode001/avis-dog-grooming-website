@@ -13,6 +13,13 @@ export default function Services() {
           <li className="fade-up">🧽 De-shedding Treatments</li>
         </ul>
       </div>
+      <div className="discount-service backdrop  wrapper fade-up">
+        <h3 className="fade-up">Special Discounts</h3>
+        <ul className="fade-up">
+          <li>✨ First-time clients get a special discount!</li>
+          <li>🐶 Multi-dog households enjoy discounted rates.</li>
+        </ul>
+      </div>
     </section>
   );
 }

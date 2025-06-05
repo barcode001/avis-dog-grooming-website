@@ -29,3 +29,40 @@
     padding: 0;
   }
 }
+
+// .special-note {
+//   margin-top: 2rem;
+//   padding: 1rem;
+//   font-size: 1.125rem;
+//   font-weight: 600;
+//   text-align: center;
+//   color: hsl(271, 30%, 35%);
+//   background-color: hsl(184deg 76% 97%);
+//   border-radius: 0.5rem;
+//   border: 1px dashed hsl(184deg 76% 50%);
+// }
+
+.discount-service {
+  background-color: hsl(184deg 76% 97%);
+  border: 1px dashed hsl(184deg 76% 50%);
+  width: clamp(rem(350), 80vw, rem(1200));
+  display: grid;
+  place-items: center;
+  padding: 1em;
+  margin: 1.5em;
+  border-radius: 1em;
+  padding-bottom: 2em;
+  padding-top: 0;
+  text-align: center;
+  h3 {
+    color: hsl(321deg 80% 46%);
+    font-size: 2rem;
+  }
+
+  li {
+    font-weight: 600;
+    color: hsl(271, 30%, 35%);
+    list-style: none;
+    margin-left: -30px;
+  }
+}
