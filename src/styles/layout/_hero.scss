@@ -25,7 +25,8 @@
       width: clamp(rem(300), 40vw, rem(900));
       height: auto;
       aspect-ratio: 3 / 2;
-      display: block;
+      // display: grid;
+      // place-self: center;
     }
     .van-image {
       position: absolute;
@@ -36,7 +37,8 @@
 
       // height: auto;
       aspect-ratio: 3 / 2;
-      display: block;
+      // display: grid;
+      // place-self: center;
     }
 
     h1 {
@@ -128,13 +130,14 @@
   }
 }
 
-.dogs-image .hero-image {
-  opacity: 0;
-  transform: scale(0.7);
-  animation: dogsGrowIn 5s ease-out forwards;
-  z-index: 2;
-  position: relative;
-}
+// .dogs-image .hero-image {
+//   opacity: 0;
+//   transform: scale(0.7);
+//   animation: dogsGrowIn 5s ease-out forwards;
+
+//   z-index: 2;
+//   position: relative;
+// }
 
 .van-img {
   animation: vanDriveAcross 5s ease-in-out forwards;
@@ -149,8 +152,19 @@
 
 .dogs-image {
   opacity: 0;
-  animation: dogsFadeIn 5s ease-in-out forwards;
+  animation: dogsFadeIn 3s ease-in-out forwards;
   animation-delay: 0s;
   z-index: 2;
   position: relative;
 }
+
+// .dogs-img {
+//   opacity: 0;
+//   transform: scale(0.7);
+//   transition: transform 1.5s ease, opacity 1.5s ease;
+// }
+
+// .dogs-img.animate {
+//   opacity: 1;
+//   transform: scale(1);
+// }

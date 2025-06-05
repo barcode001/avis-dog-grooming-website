@@ -1,10 +1,11 @@
-import React, { lazy } from "react";
+import React, { useState } from "react";
 import heroDesktop from "../assets/images/hero-dogs.png";
 import heroMobile from "../assets/images/hero-dogs.avif";
-import vanDesktop from "../assets/images/van.png";
-import vanMobile from "../assets/images/van.png";
+import vanDesktop from "../assets/images/van.webp";
+import vanMobile from "../assets/images/van.webp";
 
 export default function Hero() {
+  const [dogsReady, setDogsReady] = useState(false);
   return (
     <section className="hero">
       <div className="hero-content">
@@ -20,10 +21,10 @@ export default function Hero() {
             alt="Grooming van"
             loading="eager"
             width="1200"
-            height="800"
+            height="6n00"
           />
         </picture>
-        <picture className="dogs-wrapper">
+        {/* <picture className="dogs-wrapper">
           <source
             srcSet={heroMobile}
             media="(max-width: 600px)"
@@ -36,6 +37,18 @@ export default function Hero() {
             loading="eager"
             width="1200"
             height="600"
+          />
+        </picture> */}
+        <picture className="dogs-wrapper">
+          <source srcSet={heroMobile} media="(max-width: 600px)" />
+          <img
+            className={`dogs-image ${dogsReady ? "animate" : ""}`}
+            src={heroDesktop}
+            alt="Dogs"
+            width="1200"
+            height="600"
+            onLoad={() => setDogsReady(true)} // 🔥 Trigger animation after image loads
+            loading="eager"
           />
         </picture>
 
