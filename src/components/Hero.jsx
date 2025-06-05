@@ -1,19 +1,36 @@
 import React, { lazy } from "react";
 import heroDesktop from "../assets/images/hero-dogs.png";
 import heroMobile from "../assets/images/hero-dogs.avif";
+import vanDesktop from "../assets/images/van.png";
+import vanMobile from "../assets/images/van.png";
 
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <picture>
+        <picture className="van-image">
+          <source
+            srcSet={vanMobile}
+            media="(max-width: 600px)"
+            type="image/webp"
+          />
+          <img
+            className="van-img" // ✅ This is key!
+            src={vanDesktop}
+            alt="Grooming van"
+            loading="eager"
+            width="1200"
+            height="800"
+          />
+        </picture>
+        <picture className="dogs-wrapper">
           <source
             srcSet={heroMobile}
             media="(max-width: 600px)"
             type="image/webp"
           />
           <img
-            className="hero-image"
+            className="dogs-image"
             src={heroDesktop}
             alt="Dogs after getting groomed"
             loading="eager"
@@ -21,6 +38,7 @@ export default function Hero() {
             height="600"
           />
         </picture>
+
         <h1>Avi’s Little Groom Room</h1>
         <p>
           Professional dog grooming services in Houston — gentle, loving care

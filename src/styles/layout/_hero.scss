@@ -21,10 +21,20 @@
     border-radius: 1rem;
     padding: 2rem;
 
-    .hero-image {
+    .dogs-image {
       width: clamp(rem(300), 40vw, rem(900));
-
       height: auto;
+      aspect-ratio: 3 / 2;
+      display: block;
+    }
+    .van-image {
+      position: absolute;
+      // top: 0;
+      // left: 0;
+      // padding-left: 30px;
+      // padding-top: rem(90);
+
+      // height: auto;
       aspect-ratio: 3 / 2;
       display: block;
     }
@@ -65,4 +75,82 @@
       }
     }
   }
+}
+
+@keyframes vanDriveAcross {
+  0% {
+    transform: translateX(100vw); // off-screen right
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(0); // centered
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(0); // still visible
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-120vw); // fully off-screen left
+    opacity: 0;
+  }
+}
+
+@keyframes dogsFadeIn {
+  0%,
+  59% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dogsGrowIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.dogs-image .hero-image {
+  opacity: 0;
+  transform: scale(0.7);
+  animation: dogsGrowIn 5s ease-out forwards;
+  z-index: 2;
+  position: relative;
+}
+
+.van-img {
+  animation: vanDriveAcross 5s ease-in-out forwards;
+  position: absolute;
+  // top: rem(90);
+  left: 0;
+  z-index: 1;
+  // width: 900px;
+  width: clamp(rem(300), 40vw, rem(900));
+  height: auto;
+}
+
+.dogs-image {
+  opacity: 0;
+  animation: dogsFadeIn 5s ease-in-out forwards;
+  animation-delay: 0s;
+  z-index: 2;
+  position: relative;
 }
