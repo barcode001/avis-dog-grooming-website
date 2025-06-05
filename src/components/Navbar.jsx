@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.avif";
+import logo from "../assets/images/logo.webp";
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="navbar backdrop">
       <div className="navbar-container wrapper">
         <Link to="/" className="logo">
-          <img loading="lazy" src={logo} alt="Logo" />
+          <img loading="eager" src={logo} alt="Logo" />
         </Link>
 
         {/* Hamburger icon */}

@@ -16,7 +16,7 @@ export default function Hero() {
             className="hero-image"
             src={heroDesktop}
             alt="Dogs after getting groomed"
-            loading="lazy"
+            loading="eager"
             width="1200"
             height="600"
           />
