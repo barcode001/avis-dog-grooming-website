@@ -8,6 +8,18 @@
   margin-top: 0;
   padding: 0;
   margin-bottom: rem(40);
+  p {
+    font-weight: 700;
+    font-size: rem(24);
+    text-align: center;
+    background: repeating-linear-gradient(35deg, #e40b91, #039699 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    // Optional: Make it work in Firefox too
+    background-clip: text;
+    color: transparent;
+  }
 
   .hero-btn {
     background-color: #222;

@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 export default function Footer() {
+  useScrollReveal();
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <footer className="footer fade-up">
+      <div className="footer-container ">
         <p className="credits">
           © {new Date().getFullYear()} Avi's little Groom Room. All rights
           reserved. <span className="designer">Designed by EdenCode</span>
