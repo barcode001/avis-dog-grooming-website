@@ -1,0 +1,81 @@
+@use "/src/styles/abstracts/functions" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.contact {
+  max-width: rem(1200);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h2 {
+    font-size: clamp(rem(24), 5vw, rem(36));
+    color: hsl(184deg 76% 35%);
+    margin-bottom: 1rem;
+  }
+
+  .contact-info {
+    ul {
+      list-style: none;
+      padding: 0;
+      line-height: 2;
+      li {
+        font-size: 1.1rem;
+      }
+    }
+
+    a {
+      color: hsl(184deg 76% 35%);
+      text-decoration: underline;
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+    }
+
+    button.hero-btn {
+      align-self: start;
+      background-color: hsl(184deg 76% 35%);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: hsl(184deg 66% 25%);
+      }
+    }
+  }
+}

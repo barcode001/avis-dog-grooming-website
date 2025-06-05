@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.webp";
 import React, { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,14 +28,14 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/about" onClick={() => setMenuOpen(false)}>
+            <HashLink smooth to="/#about" onClick={() => setMenuOpen(false)}>
               About
-            </Link>
+            </HashLink>
           </li>
           <li>
-            <Link to="/services" onClick={() => setMenuOpen(false)}>
+            <HashLink smooth to="/#services" onClick={() => setMenuOpen(false)}>
               Services
-            </Link>
+            </HashLink>
           </li>
           <li>
             <Link to="/contact" onClick={() => setMenuOpen(false)}>

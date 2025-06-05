@@ -3,6 +3,7 @@ import heroDesktop from "../assets/images/hero-dogs.png";
 import heroMobile from "../assets/images/hero-dogs.avif";
 import vanDesktop from "../assets/images/van.webp";
 import vanMobile from "../assets/images/van.webp";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [dogsReady, setDogsReady] = useState(false);
@@ -59,9 +60,9 @@ export default function Hero() {
           Professional dog grooming services in Houston — gentle, loving care
           for your furry friends.
         </p>
-        <a href="/booking" className="hero-btn">
+        <Link to="/booking" className="hero-btn">
           Book Now
-        </a>
+        </Link>
       </div>
     </section>
   );
