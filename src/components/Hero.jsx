@@ -60,7 +60,7 @@ export default function Hero() {
           Professional dog grooming services in Houston — gentle, loving care
           for your furry friends.
         </p>
-        <Link to="/booking" className="hero-btn">
+        <Link to="/contact" className="hero-btn">
           Book Now
         </Link>
       </div>

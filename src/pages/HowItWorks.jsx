@@ -11,10 +11,13 @@ export default function HowItWorks() {
             <strong>1.</strong> Book an appointment online or by phone
           </li>
           <li className="fade-up">
-            <strong>2.</strong> We arrive in our mobile grooming van
+            <strong>2.</strong> House Call – I come to you fully equipped, just
+            provide a space with an outlet. I’ll groom your pup and clean up
+            everything before I leave.
           </li>
           <li className="fade-up">
-            <strong> 3.</strong> Your dog gets pampered at your doorstep
+            <strong> 3.</strong> Your dog gets pampered without you ever leaving
+            home
           </li>
         </ol>
       </div>

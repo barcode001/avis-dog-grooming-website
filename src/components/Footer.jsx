@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import useScrollReveal from "../hooks/useScrollReveal";
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   useScrollReveal();
@@ -12,8 +13,8 @@ export default function Footer() {
         </p>
         <div className="footer-links">
           <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About</Link>
+          <HashLink to="/#services">Services</HashLink>
+          <HashLink to="/#about">About</HashLink>
           <Link to="/contact">Contact</Link>
         </div>
       </div>

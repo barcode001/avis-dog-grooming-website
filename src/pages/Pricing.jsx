@@ -11,9 +11,9 @@ export default function Pricing() {
               X-Small Babies <br /> (1–20 lbs)
             </h3>
             <ul>
-              <li className="fade-up">Bath – $45 (40 mins)</li>
-              <li className="fade-up">Mini Groom – $65 (60 mins)</li>
-              <li className="fade-up">Full Groom – $80 (120 mins)</li>
+              <li className="fade-up">Bath – $45 </li>
+              <li className="fade-up">Mini Groom – $65 </li>
+              <li className="fade-up">Full Groom – $80 </li>
             </ul>
           </div>
           <div className="pricing-service backdrop fade-up">
@@ -21,9 +21,9 @@ export default function Pricing() {
               Small Babies <br /> (21–35 lbs)
             </h3>
             <ul>
-              <li className="fade-up">Bath – $55 (40 mins)</li>
-              <li className="fade-up">Mini Groom – $75 (60 mins)</li>
-              <li className="fade-up">Full Groom – $90 (120 mins)</li>
+              <li className="fade-up">Bath – $55 </li>
+              <li className="fade-up">Mini Groom – $75 </li>
+              <li className="fade-up">Full Groom – $90 </li>
             </ul>
           </div>
 
@@ -61,11 +61,11 @@ export default function Pricing() {
           <div className="pricing-service backdrop fade-up" id="addons">
             <h3 className="fade-up">Add-Ons</h3>
             <ul className="fade-up">
-              <li>Matting – $20 (30 mins)</li>
-              <li>De-Matting Services – $20 (30 mins)</li>
-              <li>Flea & Tick Treatment – $15 (30 mins)</li>
-              <li>Teeth Brush – $5 (10 mins)</li>
-              <li>Nail Trim – $10 (15 mins)</li>
+              <li>Matting – $20</li>
+              <li>De-Matting Services – $20 </li>
+              <li>Flea & Tick Treatment – $15 </li>
+              <li>Teeth Brush – $5 </li>
+              <li>Nail Trim – $10 </li>
             </ul>
           </div>
         </section>

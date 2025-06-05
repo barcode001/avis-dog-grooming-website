@@ -7,7 +7,7 @@ export default function CallToAction() {
       <p className="fade-up">
         🐕 Ready to give your pup the spa day they deserve?
       </p>
-      <Link to="/booking" className="hero-btn">
+      <Link to="/contact" className="hero-btn">
         Book Now
       </Link>
     </div>
