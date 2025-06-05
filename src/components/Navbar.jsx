@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="navbar backdrop">
       <div className="navbar-container wrapper">
         <Link to="/" className="logo">
-          <img src={logo} alt="Logo" />
+          <img loading="lazy" src={logo} alt="Logo" />
         </Link>
 
         {/* Hamburger icon */}

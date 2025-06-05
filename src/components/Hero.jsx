@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import heroDesktop from "../assets/images/hero-dogs.png";
 import heroMobile from "../assets/images/hero-dogs.webp";
 
@@ -16,6 +16,7 @@ export default function Hero() {
             className="hero-image"
             src={heroDesktop}
             alt="Dogs after getting groomed"
+            loading="lazy"
           />
         </picture>
         <h1>Avi’s Little Groom Room</h1>
