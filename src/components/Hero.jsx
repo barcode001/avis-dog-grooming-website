@@ -1,11 +1,23 @@
 import React from "react";
-import hero from "./images/hero-dogs.png";
+import heroDesktop from "../assets/images/hero-dogs.png";
+import heroMobile from "../assets/images/hero-dogs.webp";
 
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <img className="hero-image" src={hero} alt="image" />
+        <picture>
+          <source
+            srcSet={heroMobile}
+            media="{max-width: 600px"
+            type="image/webp"
+          />
+          <img
+            className="hero-image"
+            src={heroDesktop}
+            alt="Dogs after getting groomed"
+          />
+        </picture>
         <h1>Avi’s Little Groom Room</h1>
         <p>
           Professional dog grooming services in Houston — gentle, loving care
