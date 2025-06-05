@@ -1,0 +1,65 @@
+@use "/src/styles/abstracts/functions" as *;
+@use "/src/styles/abstracts//mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.pricing {
+  // display: grid;
+
+  // place-self: center;
+
+  h2 {
+    text-align: center;
+    font-size: clamp(rem(24), 10vw, rem(70));
+    background: repeating-linear-gradient(145deg, #e40b91, #039699 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    // Optional: Make it work in Firefox too
+    background-clip: text;
+    color: transparent;
+  }
+  .pricing-service {
+    width: clamp(rem(350), 80vw, rem(1200));
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em;
+    margin: 1.5em;
+    border-radius: 1em;
+    padding-bottom: 2em;
+    padding-top: 0;
+    margin-left: 5px;
+    @media (max-width: 700px) {
+      display: grid;
+      grid-template-columns: auto;
+      place-content: center;
+      margin-left: rem(22);
+    }
+
+    h3 {
+      color: hsl(271deg 30% 45%);
+    }
+
+    ul {
+      width: 400px;
+      @media (max-width: 700px) {
+        text-align: center;
+        display: grid;
+
+        padding: 0;
+      }
+    }
+    li {
+      list-style: none;
+      line-height: 30px;
+      // padding: 0;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}

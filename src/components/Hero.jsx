@@ -52,7 +52,9 @@ export default function Hero() {
           />
         </picture>
 
-        <h1>Avi’s Little Groom Room</h1>
+        <h1 className="fade-up">
+          Avi’s Little <span id="title-color">Groom Room</span>
+        </h1>
         <p>
           Professional dog grooming services in Houston — gentle, loving care
           for your furry friends.

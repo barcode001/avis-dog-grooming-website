@@ -1,10 +1,11 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import BottomSection from "./pages/BottomSection";
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
             path="/"
             element={
               <>
-                <Hero /> <Home />
+                <Hero /> <BottomSection />
               </>
             }
           />

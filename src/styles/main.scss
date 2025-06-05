@@ -7,6 +7,13 @@
 @use "./layout/home";
 @use "./layout/navbar";
 @use "./layout/hero";
+@use "./layout/bottom-section";
+@use "./layout/how-it-works";
+@use "./layout/services";
+@use "./layout/testimonial";
+@use "./layout/call-to-action";
+@use "./layout/client-dogs";
+@use "./layout/pricing";
 
 .fade-up {
   opacity: 0;
@@ -57,7 +64,8 @@ html {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  margin-bottom: 2em;
+  // padding: 1rem;
 }
 
 .layout {

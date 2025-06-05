@@ -1,5 +1,5 @@
-function Home() {
-  return <div className="backdrop"></div>;
-}
+import React from "react";
 
-export default Home;
+export default function Home() {
+  return <div>Home</div>;
+}

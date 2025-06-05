@@ -1,0 +1,32 @@
+@use "/src/styles/abstracts/functions" as *;
+@use "/src/styles/abstracts//mixins" as *;
+@use "/src/styles/abstracts/variables" as *;
+
+.how-it-works {
+  width: clamp(rem(350), 80vw, rem(1200));
+  display: grid;
+  place-items: center;
+
+  padding: 1em;
+  margin: 1.5em;
+  border-radius: 1em;
+  padding-bottom: 2em;
+  padding-top: 0;
+
+  h2 {
+    text-align: center;
+    font-size: clamp(rem(24), 10vw, rem(70));
+    background: repeating-linear-gradient(145deg, #e40b91, #039699 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    // Optional: Make it work in Firefox too
+    background-clip: text;
+    color: transparent;
+  }
+  ol {
+    list-style: none;
+    line-height: 30px;
+    padding: 0;
+  }
+}
