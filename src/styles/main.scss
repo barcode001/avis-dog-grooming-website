@@ -101,3 +101,8 @@ html {
 .main-content {
   flex: 1;
 }
+
+#services,
+#about {
+  scroll-margin-top: 100px; // adjust as needed to match your header height
+}
