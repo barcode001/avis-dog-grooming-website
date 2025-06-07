@@ -9,7 +9,15 @@ export default function Navbar() {
   return (
     <nav className="navbar backdrop">
       <div className="navbar-container wrapper">
-        <Link to="/" className="logo">
+        <Link
+          to="/"
+          className="logo"
+          onClick={() => {
+            if (window.location.pathname === "/") {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
+        >
           <img loading="eager" src={logo} alt="Logo" />
         </Link>
 
