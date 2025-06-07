@@ -17,6 +17,7 @@
 @use "./layout/footer";
 @use "./layout//contact";
 @use "./layout/not-found";
+@use "./layout/thankyou";
 .fade-up {
   opacity: 0;
   transform: translateY(20px);

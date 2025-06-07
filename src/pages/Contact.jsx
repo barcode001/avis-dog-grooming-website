@@ -1,6 +1,36 @@
 import { Link } from "react-router-dom";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
+  const form = useRef();
+
+  const navigate = useNavigate();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_4389on6", // EmailJS service ID
+        "template_lt284ml", // EmailJS template ID
+        form.current,
+        "5Iw8X7_zC7WKMY8iX" // EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          navigate("/thank-you");
+          form.current.reset(); // optional: clears form
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message.");
+        }
+      );
+  };
+
   return (
     <section className="contact">
       <div className="contact-info">
@@ -8,13 +38,16 @@ export default function Contact() {
         <p>We'd love to pamper your pup! Reach out anytime.</p>
         <ul>
           <li>📍 Houston, TX</li>
-          <li>📞 (832) 962-9130</li>
-          <li>✉️ contact@avisdogs.com</li>
+          <li>
+            📞 <a href="tel:8329629130">(832) 962-9130</a>
+          </li>
+          <li>✉️ Avislittlegroomroom@gmail.com</li>
         </ul>
       </div>
 
-      <form className="contact-form">
+      <form ref={form} className="contact-form" onSubmit={sendEmail}>
         <h2>Book an Appointment</h2>
+
         <div className="form-group">
           <label htmlFor="name">Name*</label>
           <input type="text" id="name" name="name" required />
@@ -32,7 +65,10 @@ export default function Contact() {
 
         <div className="form-group">
           <label htmlFor="service">Service</label>
-          <select id="service" name="service">
+          <select id="service" name="service" required>
+            <option value="" disabled selected hidden>
+              Select a service
+            </option>
             <option>Bath</option>
             <option>Mini Groom</option>
             <option>Full Groom</option>
