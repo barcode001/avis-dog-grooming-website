@@ -79,15 +79,22 @@
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border: none;
-  background: hsl(184, 76%, 35%);
   color: white;
   border-radius: 0.5rem;
+  font-size: rem(16);
   cursor: pointer;
   transition: background 0.3s ease;
+  background: repeating-linear-gradient(145deg, #e40b91, #034849 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-  &:hover {
-    background: hsl(184, 76%, 45%);
-  }
+  // Optional: Make it work in Firefox too
+  background-clip: text;
+  color: transparent;
+
+  // &:hover {
+  //   // background: hsl(184, 76%, 45%);
+  // }
 }
 
 .extra-info {
