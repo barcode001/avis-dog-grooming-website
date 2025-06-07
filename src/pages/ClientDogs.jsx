@@ -61,6 +61,23 @@ export default function ClientDogs() {
     images.forEach((img) => observer.observe(img));
   }, []);
 
+  useEffect(() => {
+    const container = document.querySelector(".dog-scroll");
+
+    const handleWheel = (e) => {
+      if (e.deltaY !== 0) {
+        e.preventDefault();
+        container.scrollLeft += e.deltaY;
+      }
+    };
+
+    container.addEventListener("wheel", handleWheel, { passive: false });
+
+    return () => {
+      container.removeEventListener("wheel", handleWheel);
+    };
+  }, []);
+
   return (
     <section id="client-dogs" className="client-dogs wrapper">
       <h2 className="fade-up">Happy Clients</h2>

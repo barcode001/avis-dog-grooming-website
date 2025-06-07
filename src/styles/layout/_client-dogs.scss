@@ -71,10 +71,11 @@
     gap: 1rem;
     scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
+    scrollbar-width: thin; // optional styling
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    // &::-webkit-scrollbar {
+    //   display: none;
+    // }
 
     .dog-card {
       flex: 0 0 auto;

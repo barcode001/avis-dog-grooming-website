@@ -12,7 +12,15 @@ export default function Footer() {
           reserved. <span className="designer">Designed by EdenCode</span>
         </p>
         <div className="footer-links">
-          <Link to="/">Home</Link>
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              setMenuOpen(false);
+            }}
+          >
+            Home
+          </Link>
           <HashLink smooth to="/#services">
             Services
           </HashLink>

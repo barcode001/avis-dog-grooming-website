@@ -23,7 +23,13 @@ export default function Navbar() {
 
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
-            <Link to="/" onClick={() => setMenuOpen(false)}>
+            <Link
+              to="/"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                setMenuOpen(false);
+              }}
+            >
               Home
             </Link>
           </li>
