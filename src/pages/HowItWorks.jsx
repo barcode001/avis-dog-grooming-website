@@ -8,7 +8,7 @@ export default function HowItWorks() {
         <h2 className="fade-up">How It Works</h2>
         <ol>
           <li className="fade-up">
-            <strong>1.</strong> Book an appointment online or by phone
+            <strong>1.</strong> Book an appointment online or by phone.
           </li>
           <li className="fade-up">
             <strong>2.</strong> House Call – I come to you fully equipped, just
@@ -17,7 +17,7 @@ export default function HowItWorks() {
           </li>
           <li className="fade-up">
             <strong> 3.</strong> Your dog gets pampered without you ever leaving
-            home
+            home.
           </li>
         </ol>
       </div>
