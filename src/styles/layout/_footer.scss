@@ -30,3 +30,20 @@
     margin: 0;
   }
 }
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+
+  img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
