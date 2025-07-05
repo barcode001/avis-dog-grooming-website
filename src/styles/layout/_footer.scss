@@ -47,3 +47,24 @@
     }
   }
 }
+.designer-link {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: hsl(184, 76%, 35%);
+  }
+}
+
+.designer-link {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: hsl(184, 76%, 35%);
+  }
+}

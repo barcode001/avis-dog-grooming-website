@@ -36,7 +36,18 @@ export default function Footer() {
 
         <p className="credits">
           © {new Date().getFullYear()} Avi's little Groom Room. All rights
-          reserved. <span className="designer">Designed by EdenCode</span>
+          reserved.{" "}
+          <span className="designer">
+            Designed by{" "}
+            <a
+              href="https://edenscode.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="designer-link"
+            >
+              EdensCode
+            </a>
+          </span>
         </p>
         <div className="footer-links">
           <Link
