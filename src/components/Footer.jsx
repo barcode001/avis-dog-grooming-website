@@ -40,7 +40,7 @@ export default function Footer() {
           <span className="designer">
             Designed by{" "}
             <a
-              href="https://edenscode.com"
+              href="https://theedenscode.com"
               target="_blank"
               rel="noopener noreferrer"
               className="designer-link"
