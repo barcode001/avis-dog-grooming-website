@@ -6,14 +6,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTopButton from "./components/ScrollToTopButtom";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import BottomSection from "./pages/BottomSection";
+// import Hero from "./components/Hero";
+// import BottomSection from "./pages/BottomSection";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./pages/NotFound";
 import ThankYou from "./pages/ThankYou";
 import ReactGA from "react-ga4";
+import Hero from "./components/Hero";
+import BottomSection from "./pages/BottomSection";
 
 export default function App() {
   function scrollToId(id) {

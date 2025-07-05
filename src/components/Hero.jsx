@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import heroDesktop from "../assets/images/hero-dogs.png";
 import heroMobile from "../assets/images/hero-dogs.avif";
 import vanDesktop from "../assets/images/van.webp";
@@ -7,6 +7,13 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [dogsReady, setDogsReady] = useState(false);
+  useEffect(() => {
+    document.body.classList.add("no-scroll");
+    const timeout = setTimeout(() => {
+      document.body.classList.remove("no-scroll");
+    }, 5000); // match animation duration
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <section className="hero">
       <div className="hero-content">

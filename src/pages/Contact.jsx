@@ -65,14 +65,14 @@ export default function Contact() {
 
         <div className="form-group">
           <label htmlFor="service">Service</label>
-          <select id="service" name="service" required>
-            <option value="" disabled selected hidden>
+          <select id="service" name="service" required defaultValue="">
+            <option value="" disabled hidden>
               Select a service
             </option>
-            <option>Bath</option>
-            <option>Mini Groom</option>
-            <option>Full Groom</option>
-            <option>Other</option>
+            <option value="Bath">Bath</option>
+            <option value="Mini Groom">Mini Groom</option>
+            <option value="Full Groom">Full Groom</option>
+            <option value="Other">Other</option>
           </select>
         </div>
 

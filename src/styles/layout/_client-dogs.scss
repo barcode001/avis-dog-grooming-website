@@ -43,55 +43,120 @@
 //   }
 // }
 
+// .client-dogs {
+//   // padding: 2rem;
+//   // text-align: center;
+//   // display: grid;
+//   // place-content: center;
+//   max-width: 1000px;
+
+//   h2 {
+//     // font-size: clamp(1.5rem, 5vw, 2.5rem);
+//     // margin-bottom: 1.5rem;
+
+//     text-align: center;
+//     font-size: clamp(rem(24), 10vw, rem(70));
+//     background: repeating-linear-gradient(145deg, #e40b91, #039699 100%);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+
+//     // Optional: Make it work in Firefox too
+//     background-clip: text;
+//     color: transparent;
+//   }
+
+//   .dog-scroll {
+//     display: flex;
+//     overflow-x: auto;
+//     gap: 1rem;
+//     scroll-snap-type: x mandatory;
+//     padding-bottom: 1rem;
+//     scrollbar-width: thin; // optional styling
+
+//     // &::-webkit-scrollbar {
+//     //   display: none;
+//     // }
+
+//     .dog-card {
+//       flex: 0 0 auto;
+//       width: 270px;
+//       scroll-snap-align: start;
+//       border-radius: 1rem;
+//       overflow: hidden;
+//       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+//       scroll-snap-align: center;
+
+//       img {
+//         width: 100%;
+//         height: 400px;
+//         display: block;
+//         object-fit: cover;
+//       }
+//     }
+//   }
+// }
+
+// .client-dogs {
+//   text-align: center;
+//   padding: 2rem 0;
+
+//   .dog-card {
+//     border-radius: 1rem;
+//     overflow: hidden;
+//     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+//     img {
+//       width: 100%;
+//       height: auto;
+//       display: block;
+//     }
+//   }
+
+//   .swiper-pagination-bullet {
+//     background: #666;
+//     opacity: 0.5;
+//   }
+
+//   .swiper-pagination-bullet-active {
+//     background: #000;
+//     opacity: 1;
+//   }
+// }
+
 .client-dogs {
-  // padding: 2rem;
-  // text-align: center;
-  // display: grid;
-  // place-content: center;
-  max-width: 1000px;
+  text-align: center;
+  padding: 2rem 0;
 
-  h2 {
-    // font-size: clamp(1.5rem, 5vw, 2.5rem);
-    // margin-bottom: 1.5rem;
+  .dog-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
-    text-align: center;
-    font-size: clamp(rem(24), 10vw, rem(70));
-    background: repeating-linear-gradient(145deg, #e40b91, #039699 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    // Optional: Make it work in Firefox too
-    background-clip: text;
-    color: transparent;
-  }
-
-  .dog-scroll {
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-    scrollbar-width: thin; // optional styling
-
-    // &::-webkit-scrollbar {
-    //   display: none;
-    // }
-
-    .dog-card {
-      flex: 0 0 auto;
-      width: 270px;
-      scroll-snap-align: start;
+    img {
       border-radius: 1rem;
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      scroll-snap-align: center;
-
-      img {
-        width: 100%;
-        height: 400px;
-        display: block;
-        object-fit: cover;
-      }
+      width: 300px;
+      height: 400px;
+      // display: block;
+      object-fit: cover;
     }
   }
+
+  .swiper-pagination-bullet {
+    background: #666;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #000;
+    opacity: 1;
+  }
+}
+.swiper {
+  position: relative;
+  padding-bottom: rem(60); // more space for the dots
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
 }
