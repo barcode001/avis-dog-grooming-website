@@ -15,7 +15,7 @@ export default function Hero() {
     return () => clearTimeout(timeout);
   }, []);
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-content">
         <picture className="van-image">
           <source
@@ -29,7 +29,7 @@ export default function Hero() {
             alt="Grooming van"
             loading="eager"
             width="1200"
-            height="6n00"
+            height="600"
           />
         </picture>
         {/* <picture className="dogs-wrapper">

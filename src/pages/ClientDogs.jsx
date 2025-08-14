@@ -58,7 +58,7 @@ export default function ClientDogs() {
         modules={[Autoplay, Pagination]}
         slidesPerView={1}
         spaceBetween={20}
-        pagination={{ clickable: true }}
+        pagination={{ dynamicBullets: true }}
         autoplay={{ delay: 2500 }}
         loop={true}
         breakpoints={{

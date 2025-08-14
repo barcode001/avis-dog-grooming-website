@@ -1,3 +1,83 @@
 @use "/src/styles/abstracts/functions" as *;
 @use "/src/styles/abstracts//mixins" as *;
 @use "/src/styles/abstracts/variables" as *;
+
+.testimonial-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: repeating-linear-gradient(145deg, #e40b91, #039699 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  // Optional: Make it work in Firefox too
+  background-clip: text;
+  color: transparent;
+}
+
+.testimonial-block {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #4f4e4e;
+  margin: 1rem 0;
+}
+
+.testimonial-footer {
+  margin-top: 1rem;
+  font-weight: bold;
+  background: repeating-linear-gradient(145deg, #e40b91, #039699 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  // Optional: Make it work in Firefox too
+  background-clip: text;
+  color: transparent;
+}
+
+.testimonial-cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.leave-review-button {
+  background-color: #222;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: #222222de;
+  }
+}
+
+.testimonial-link {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #e40b91;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #d1c4e9; // light purple
+  opacity: 1;
+  padding: 7px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7e57c2; // deeper purple
+}

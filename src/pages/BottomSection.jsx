@@ -6,6 +6,7 @@ import Services from "./Services";
 import CallToAction from "./CallToAction";
 import ClientDogs from "./ClientDogs";
 import Pricing from "./Pricing";
+import Testimonial from "./Testimonial";
 
 export default function BottomSection() {
   return (
@@ -13,6 +14,7 @@ export default function BottomSection() {
       <HowItWorks />
       <Services />
       <Pricing />
+      <Testimonial />
       <ClientDogs />
       <CallToAction />
     </section>
