@@ -1,4 +1,9 @@
 const testimonials = [
+    {
+    text: "She did an amazing job on my dogs. She’s also very knowledgeable about dogs and I fully trust her with mine. I’m extremely happy with the job she did. I will only have my dogs groomed by her from now on.",
+    author: "Justine Casanova",
+    link: "https://maps.app.goo.gl/soNNm7iuowQz4PvD8",
+  },
   {
     text: "Avi’s little grooming did and amazing job with my Shih tzu. They were so nice and I will be reaching out for the next grooming.",
     author: "Delfi Avila",
