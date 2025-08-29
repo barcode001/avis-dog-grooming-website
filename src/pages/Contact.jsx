@@ -37,7 +37,7 @@ export default function Contact() {
         <h2>Get In Touch</h2>
         <p>We'd love to pamper your pup! Reach out anytime.</p>
         <ul>
-          <li>📍 Houston, TX</li>
+          <li>📍 7010 Shotwell St, Houston, TX 77028</li>
           <li>
             📞 <a href="tel:8329629130">(832) 962-9130</a>
           </li>
