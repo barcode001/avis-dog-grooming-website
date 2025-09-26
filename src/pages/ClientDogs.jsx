@@ -24,7 +24,6 @@ import dog18 from "../assets/images/dog17.webp";
 import dog19 from "../assets/images/dog18.webp";
 import dog20 from "../assets/images/dog19.webp";
 import dog21 from "../assets/images/dog20.webp";
-
 import dog22 from "../assets/images/dogs22.jpg";
 import dog23 from "../assets/images/dogs23.jpg";
 import dog24 from "../assets/images/dogs24.jpg";
