@@ -11,9 +11,61 @@ export default function About() {
         <title>About Avigail | Avi's Little Groom Room Houston</title>
         <meta
           name="description"
-          content="Learn about Avigail, the heart behind Avi's Little Groom Room in Houston. With years of experience and a passion for dogs, she provides affordable, loving grooming care."
+          content="Meet Avigail, the heart of Avi's Little Groom Room in Houston. With passion and experience, she provides affordable, loving dog grooming care."
         />
         <link rel="canonical" href="https://avislittlegroomroom.com/about" />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="About Avigail | Avi's Little Groom Room Houston"
+        />
+        <meta
+          property="og:description"
+          content="Meet Avigail, a dedicated dog groomer in Houston. With years of experience and a passion for pups, she provides affordable, loving grooming care."
+        />
+        <meta
+          property="og:image"
+          content="https://avislittlegroomroom.com/assets/images/dog10.webp"
+        />
+        <meta
+          property="og:url"
+          content="https://avislittlegroomroom.com/about"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="About Avigail | Avi's Little Groom Room Houston"
+        />
+        <meta
+          name="twitter:description"
+          content="Meet Avigail, the heart of Avi's Little Groom Room in Houston. With passion and experience, she provides affordable, loving dog grooming care."
+        />
+        <meta
+          name="twitter:image"
+          content="https://avislittlegroomroom.com/assets/images/dog10.webp"
+        />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Avigail",
+              "jobTitle": "Dog Groomer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Avi's Little Groom Room"
+              },
+              "url": "https://avislittlegroomroom.com/about",
+              "image": "https://avislittlegroomroom.com/assets/images/dog10.webp"
+            }
+          `}
+        </script>
       </Helmet>
 
       <section className="card ">
