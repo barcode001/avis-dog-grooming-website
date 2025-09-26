@@ -42,9 +42,9 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <HashLink smooth to="/#about" onClick={() => setMenuOpen(false)}>
+            <Link to="/about" onClick={() => setMenuOpen(false)}>
               About
-            </HashLink>
+            </Link>
           </li>
           <li>
             <HashLink smooth to="/#services" onClick={() => setMenuOpen(false)}>

@@ -25,6 +25,26 @@ import dog19 from "../assets/images/dog18.webp";
 import dog20 from "../assets/images/dog19.webp";
 import dog21 from "../assets/images/dog20.webp";
 
+import dog22 from "../assets/images/dogs22.jpg";
+import dog23 from "../assets/images/dogs23.jpg";
+import dog24 from "../assets/images/dogs24.jpg";
+import dog25 from "../assets/images/dogs25.jpg";
+import dog26 from "../assets/images/dogs26.jpg";
+import dog27 from "../assets/images/dogs27.jpg";
+import dog28 from "../assets/images/dogs28.jpg";
+import dog29 from "../assets/images/dogs29.jpg";
+import dog30 from "../assets/images/dogs30.jpg";
+import dog31 from "../assets/images/dogs31.jpg";
+import dog32 from "../assets/images/dogs32.jpg";
+import dog33 from "../assets/images/dogs33.jpg";
+import dog34 from "../assets/images/dogs34.jpg";
+import dog35 from "../assets/images/dogs35.jpg";
+import dog36 from "../assets/images/dogs36.jpg";
+import dog37 from "../assets/images/dogs37.jpg";
+import dog38 from "../assets/images/dogs38.jpg";
+import dog39 from "../assets/images/dogs39.jpg";
+import dog40 from "../assets/images/dogs40.jpg";
+
 const dogImages = [
   dog1,
   dog2,
@@ -47,6 +67,25 @@ const dogImages = [
   dog19,
   dog20,
   dog21,
+  dog22,
+  dog23,
+  dog24,
+  dog25,
+  dog26,
+  dog27,
+  dog28,
+  dog29,
+  dog30,
+  dog31,
+  dog32,
+  dog33,
+  dog34,
+  dog35,
+  dog36,
+  dog37,
+  dog38,
+  dog39,
+  dog40,
 ];
 
 export default function ClientDogs() {

@@ -4,7 +4,7 @@ import useScrollReveal from "../hooks/useScrollReveal";
 export default function HowItWorks() {
   useScrollReveal();
   return (
-    <section id="about">
+    <section id="how-it-works">
       <div className="how-it-works backdrop wrapper fade-up">
         <h2 className="fade-up">How It Works</h2>
         <ol>

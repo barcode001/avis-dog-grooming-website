@@ -1,0 +1,62 @@
+.about-page {
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  max-width: 1100px;
+
+  .card {
+    display: flex;
+    flex-direction: column; // mobile first: stack
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1000px;
+    width: 100%;
+    color: #333;
+    line-height: 1.6;
+    animation: fadeUp 0.8s ease-out;
+
+    margin-bottom: 3rem; // space before client dogs
+
+    @media (min-width: 768px) {
+      flex-direction: row; // desktop: side by side
+      align-items: flex-start;
+    }
+
+    .avis-img {
+      width: 300px;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+
+      @media (min-width: 768px) {
+        margin: 0;
+        margin-top: 12%;
+      }
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #a22b64;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+    strong {
+      color: #0aa0a0;
+    }
+  }
+
+  .client-dogs {
+    margin-top: 2rem;
+  }
+}

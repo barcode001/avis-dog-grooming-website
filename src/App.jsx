@@ -14,8 +14,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./pages/NotFound";
 import ThankYou from "./pages/ThankYou";
 import ReactGA from "react-ga4";
-import Hero from "./components/Hero";
-import BottomSection from "./pages/BottomSection";
+import Home from "./pages/Home";
 
 export default function App() {
   function scrollToId(id) {
@@ -34,15 +33,7 @@ export default function App() {
       <main className="main-content">
         <ScrollToTop />
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero /> <BottomSection />
-              </>
-            }
-          />
-
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
