@@ -62,9 +62,7 @@ export default function Footer() {
           <HashLink smooth to="/#services">
             Services
           </HashLink>
-          <Link smooth to="/about">
-            About
-          </Link>
+          <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
         </div>
       </div>
