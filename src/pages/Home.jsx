@@ -12,19 +12,21 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="Pamper your pup at Avi's Little Groom Room – affordable dog grooming in Houston with full grooms, baths, and nail trims in a safe home environment."
+          content="Affordable dog grooming in Houston – full grooms, baths, and nail trims in a safe, loving home environment. Pamper your pup today!"
         />
         <meta
           name="keywords"
-          content="dog grooming Houston, home dog groomer, pet grooming services, dog nail trimming, full dog grooming, dog baths Houston, Avi's Little Groom Room"
+          content="dog grooming Houston, affordable dog groomer, pet grooming services, dog nail trimming, full dog grooming, dog baths Houston"
         />
+        <meta name="author" content="Avi's Little Groom Room" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://avislittlegroomroom.com/" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Avi's Little Groom Room" />
         <meta
           property="og:description"
-          content="Houston’s trusted home-based dog grooming service. Clean, caring, and stress-free for your pup."
+          content="Affordable dog grooming in Houston with grooms, baths, and nail trims in a safe, stress-free environment."
         />
         <meta
           property="og:image"
@@ -38,7 +40,7 @@ export default function Home() {
         <meta name="twitter:title" content="Avi's Little Groom Room" />
         <meta
           name="twitter:description"
-          content="Home-based dog grooming in Houston with love and care. Book your pup’s appointment today!"
+          content="Home-based dog grooming in Houston – baths, grooms & more. Gentle care your pup deserves."
         />
         <meta
           name="twitter:image"
@@ -48,15 +50,28 @@ export default function Home() {
         {/* Structured Data */}
         <script type="application/ld+json">
           {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Avi's Little Groom Room",
-              "url": "https://avislittlegroomroom.com",
-              "logo": "https://avislittlegroomroom.com/logo.png",
-              "sameAs": []
-            }
-          `}
+      {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "PetGroomingService"],
+        "name": "Avi's Little Groom Room",
+        "description": "Affordable dog grooming in Houston. Full grooms, baths, and nail trims in a safe home environment.",
+        "url": "https://avislittlegroomroom.com",
+        "logo": "https://avislittlegroomroom.com/logo.png",
+        "image": "https://avislittlegroomroom.com/assets/images/hero-dogs.avif",
+        "telephone": "+1-832-926-9130",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Houston",
+          "addressRegion": "TX",
+          "postalCode": "77077",
+          "addressCountry": "US"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Houston"
+        }
+      }
+    `}
         </script>
       </Helmet>
 
