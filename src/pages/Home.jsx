@@ -50,27 +50,28 @@ export default function Home() {
         {/* Structured Data */}
         <script type="application/ld+json">
           {`
-      {
-        "@context": "https://schema.org",
-        "@type": ["LocalBusiness", "PetGroomingService"],
-        "name": "Avi's Little Groom Room",
-        "description": "Affordable dog grooming in Houston. Full grooms, baths, and nail trims in a safe home environment.",
-        "url": "https://avislittlegroomroom.com",
-        "logo": "https://avislittlegroomroom.com/logo.png",
-        "image": "https://avislittlegroomroom.com/assets/images/hero-dogs.avif",
-        "telephone": "+1-832-926-9130",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Houston",
-          "addressRegion": "TX",
-          "postalCode": "77077",
-          "addressCountry": "US"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Houston"
-        }
+        {
+            "@context": "https://schema.org",
+            "@type": ["LocalBusiness", "PetGroomingService"],
+            "name": "Avi's Little Groom Room",
+            "description": "Affordable dog grooming in Houston. Full grooms, baths, and nail trims in a safe home environment.",
+            "url": "https://avislittlegroomroom.com",
+            "logo": "https://avislittlegroomroom.com/logo.png",
+            "image": "https://avislittlegroomroom.com/assets/images/hero-dogs.avif",
+            "telephone": "+1-832-962-9130",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "7010 Shotwell St",
+              "addressLocality": "Houston",
+              "addressRegion": "TX",
+              "postalCode": "77028",
+              "addressCountry": "US"
+          },
+            "areaServed": {
+              "@type": "City",
+              "name": "Houston"
       }
+    }
     `}
         </script>
       </Helmet>
