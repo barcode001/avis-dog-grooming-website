@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 import ThankYou from "./pages/ThankYou";
 import ReactGA from "react-ga4";
 import Home from "./pages/Home";
+import ServicesPage from "./pages/ServicePage";
 
 export default function App() {
   function scrollToId(id) {
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/thank-you" element={<ThankYou />} />
         </Routes>

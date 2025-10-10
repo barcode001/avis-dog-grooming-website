@@ -47,9 +47,9 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <HashLink smooth to="/#services" onClick={() => setMenuOpen(false)}>
+            <Link to="/services" onClick={() => setMenuOpen(false)}>
               Services
-            </HashLink>
+            </Link>
           </li>
           <li>
             <Link to="/contact" onClick={() => setMenuOpen(false)}>

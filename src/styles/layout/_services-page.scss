@@ -1,0 +1,131 @@
+@use "../abstracts/functions" as *;
+
+.services-page {
+  text-align: center;
+  padding: 2rem 1rem;
+
+  h1 {
+    padding-top: 1.5rem;
+    background: linear-gradient(90deg, #e40b91, #039699);
+    background-clip: text; // standard version
+    -webkit-background-clip: text; // for Safari and Chrome
+    color: transparent;
+    -webkit-text-fill-color: transparent; // for Safari
+  }
+  p {
+    color: #4c4949;
+    line-height: 1.6;
+  }
+  .hero-img {
+    width: 100%;
+    max-width: rem(800);
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+
+    @media (min-width: 768px) {
+      gap: 4rem;
+    }
+
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      text-align: center;
+
+      @media (min-width: 900px) {
+        flex-direction: row;
+        text-align: left;
+
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+      }
+
+      img {
+        width: 100%;
+        max-width: rem(400);
+        border-radius: 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        font-size: clamp(rem(22), 3vw, rem(30));
+        background: linear-gradient(90deg, #e40b91, #039699);
+        background-clip: text; // standard version
+        -webkit-background-clip: text; // for Safari and Chrome
+        color: transparent;
+        -webkit-text-fill-color: transparent; // for Safari
+      }
+
+      p {
+        color: #fff;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .benefits,
+  .faq,
+  .cta {
+    margin-top: 4rem;
+    max-width: rem(900);
+    margin-inline: auto;
+  }
+
+  .benefits h2,
+  .faq h2,
+  .cta h2 {
+    background: linear-gradient(145deg, #e40b91, #039699);
+    background-clip: text; // standard version
+    -webkit-background-clip: text; // for Safari and Chrome
+    color: transparent;
+    -webkit-text-fill-color: transparent; // for Safari
+  }
+
+  details {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    text-align: left;
+
+    summary {
+      font-weight: 700;
+      color: #fff;
+    }
+
+    p {
+      margin-top: 0.6rem;
+      color: #fff;
+      line-height: 1.6;
+    }
+  }
+
+  .cta a {
+    margin-top: 1rem;
+    display: inline-block;
+  }
+}
+
+.services ul li a {
+  text-decoration: none;
+  color: inherit; // keeps emoji + text same color
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: hsl(321, 80%, 46%); // matches your theme
+  }
+}

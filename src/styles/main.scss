@@ -18,6 +18,8 @@
 @use "./layout//contact";
 @use "./layout/not-found";
 @use "./layout/thankyou";
+@use "./layout/services-page";
+
 .fade-up {
   opacity: 0;
   transform: translateY(20px);
@@ -109,12 +111,12 @@ body.scroll-locked {
   flex: 1;
 }
 
-#services,
-#about {
-  scroll-margin-top: 100px; // adjust as needed to match your header height
-}
+// #service,
+// #about {
+//   scroll-margin-top: 100px; // adjust as needed to match your header height
+// }
 
-.scroll-locked {
-  overflow: hidden !important;
-  height: 100vh !important;
-}
+// .scroll-locked {
+//   overflow: hidden !important;
+//   height: 100vh !important;
+// }
