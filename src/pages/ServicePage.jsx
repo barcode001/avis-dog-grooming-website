@@ -3,12 +3,12 @@ import { Helmet } from "react-helmet-async";
 import useScrollReveal from "../hooks/useScrollReveal";
 
 // --- Image Imports ---
-import heroImg from "../assets/images/grooming/services-hero.jpg";
-import fullHaircutImg from "../assets/images/grooming/full-haircut.png";
-import bathBlowoutImg from "../assets/images/grooming/bath-blowout.jpg";
-import nailTrimImg from "../assets/images/grooming/nail-trim.png";
-import teethCleaningImg from "../assets/images/grooming/teeth-cleaning.png";
-import desheddingImg from "../assets/images/grooming/deshedding.jpg";
+import heroImg from "../assets/images/grooming/services-hero.webp";
+import fullHaircutImg from "../assets/images/grooming/full-haircut.webp";
+import bathBlowoutImg from "../assets/images/grooming/bath-blowout.webp";
+import nailTrimImg from "../assets/images/grooming/nail-trim.webp";
+import teethCleaningImg from "../assets/images/grooming/teeth-cleaning.webp";
+import desheddingImg from "../assets/images/grooming/deshedding.webp";
 
 export default function ServicesPage() {
   useScrollReveal();
